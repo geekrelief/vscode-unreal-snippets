@@ -206,8 +206,16 @@
 			"\t\tPCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;",
 			"\t\tbEnforceIWYU = true;",
 			"",
-			"\t\tPublicDependencyModuleNames.AddRange(new string[] { \"Core\", \"CoreUObject\", \"Engine\" });",
-			"\t\tPrivateDependencyModuleNames.AddRange(new string[] { });",
+			"\t\tPublicDependencyModuleNames.AddRange(new string[] { \"Core\", \"CoreUObject\", \"Engine\", \"InputCore\" });\n",
+			"\t\tPrivateDependencyModuleNames.AddRange(new string[] { });\n",
+
+			"\t\t\/\/ Uncomment if you are using Slate UI\n",
+			"\t\t\/\/ PrivateDependencyModuleNames.AddRange(new string[] { \"Slate\", \"SlateCore\" });\n",
+		
+			"\t\t\/\/ Uncomment if you are using online features\n",
+			"\t\t\/\/ PrivateDependencyModuleNames.Add(\"OnlineSubsystem\");\n",
+
+			"\t\t\/\/ To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true\n",
 			"\t}",
 			"}"
 		],
