@@ -289,14 +289,15 @@
 		"prefix": "umt",
 		"body": [
 			"using UnrealBuildTool;",
+			"using System.Collections.Generic;",
 			"",
 			"public class ${TM_FILENAME/([^\\.]+)\\..*/$1/}Target : TargetRules",
 			"{",
 			"\tpublic ${TM_FILENAME/([^\\.]+)\\..*/$1/}Target(TargetInfo Target) : base(Target)",
 			"\t{",
-			"\t\tType = TargetType.Game;",
+			"\t\tType = TargetType.${3|Game,Editor|};",
 			"\t\tDefaultBuildSettings = BuildSettingsVersion.V2;",
-			"\t\tExtraModuleNames.AddRange( new string[] { \"$1\" } );",
+			"\t\tExtraModuleNames.AddRange( new string[] { \"${2:${TM_FILENAME/([^\\.]+)\\..*/$1/}}\" } );",
 			"\t}",
 			"}"
 		],
@@ -331,7 +332,7 @@
 		"body": [
 			"{",
 			"\t\"FileVersion\": 3,",
-			"\t\"EngineAssociation\": \"${2:4.25}\",",
+			"\t\"EngineAssociation\": \"${2:5.0}\",",
 			"\t\"Category\": \"\",",
 			"\t\"Description\": \"\",",
 			"\t\"Modules\": [",
