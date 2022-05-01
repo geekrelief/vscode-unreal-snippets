@@ -1,6 +1,8 @@
 # vscode-unreal-snippets
 Unreal Engine snippets based on https://github.com/awforsythe/sublime-unreal-snippets
 
+This has been tested against Unreal Engine 5.0.
+
 ---
 # Getting Started
 
@@ -17,3 +19,9 @@ Unreal Engine snippets based on https://github.com/awforsythe/sublime-unreal-sni
 2. Inside of VS Code go to ***File*** > ***Preferences*** > ***User Snippets*** > ***New Global Snippets file***
 
 3. Paste the contents of vscode-unreal-snippets.code-snippets.
+
+### Option 3
+1. Clone vscode-unreal-snippets.
+
+2. Create a symbolic link of vscode-unreal-snippets.code-snippets in your user snippets folder.
+On Windows that would be in your `AppData/Roaming/Code/User/snippets` folder.
