@@ -183,7 +183,7 @@
 	"Unreal Log Line": {
 		"prefix": "ull",
 		"body": [
-			"UE_LOG(Log${TM_FILEPATH/.*Source[\\\\\\/]([^\\\\/]+)[\\\\\\/](?:Private|Public).*/$1/}, Log, TEXT(\"Hello\");"
+			"UE_LOG(Log${TM_FILEPATH/.*Source[\\\\\\/]([^\\\\/]+)[\\\\\\/](?:Private|Public).*/$1/}, Log, TEXT(\"Hello\"));"
 		],
 		"description": "Unreal Log Line"
 	},
