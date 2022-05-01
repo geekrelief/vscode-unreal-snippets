@@ -2,6 +2,7 @@
 Unreal Engine snippets based on https://github.com/awforsythe/sublime-unreal-snippets
 
 This has been tested against Unreal Engine 5.0.
+Snippets in Visual Studio Code https://code.visualstudio.com/docs/editor/userdefinedsnippets
 
 ---
 # Getting Started
